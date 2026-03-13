@@ -101,16 +101,6 @@ app.innerHTML = `
                    <span class="text-[9px] md:text-[10px] font-black uppercase tracking-[0.6em] text-white/40 group-hover:text-accent transition-colors">Scan Access Deployment</span>
                 </div>
 
-                <!-- Mockups: visible below QR on mobile, right on desktop -->
-                <div class="flex gap-4 md:gap-6 justify-center">
-                   <div class="w-24 md:w-32 lg:w-40 aspect-[9/16] bg-black/40 rounded-xl md:rounded-2xl border border-white/5 overflow-hidden">
-                      <img src="/assets/mockup-feed.png" class="w-full h-full object-cover opacity-60" alt="">
-                   </div>
-                   <div class="w-24 md:w-32 lg:w-40 aspect-[9/16] bg-black/40 rounded-xl md:rounded-2xl border border-white/5 overflow-hidden mt-6 md:mt-10 lg:mt-12">
-                      <img src="/assets/mockup-booking.png" class="w-full h-full object-cover opacity-60" alt="">
-                   </div>
-                </div>
-
                 <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 blur-[80px] rounded-full pointer-events-none"></div>
              </div>
           </div>
