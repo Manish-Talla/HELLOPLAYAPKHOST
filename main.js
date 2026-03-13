@@ -47,7 +47,7 @@ app.innerHTML = `
     <section class="relative min-h-screen flex items-center overflow-hidden bg-primary-bg py-24 md:py-0">
       <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary-bg/80 to-primary-bg z-10"></div>
-        <img src="https://images.unsplash.com/photo-1541252260730-0412e8e2108e?auto=format&fit=crop&q=80&w=2000" 
+        <img src="/assets/badminton-court-bg.png" 
              class="w-full h-full object-cover opacity-20 scale-110 hero-visual" alt="">
       </div>
 
