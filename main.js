@@ -54,8 +54,8 @@ app.innerHTML = `
       <div class="container mx-auto px-6 md:px-20 relative z-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
-          <!-- Text Content -->
-          <div class="order-2 lg:order-1">
+          <!-- Text Content: order-1 on mobile, order-1 on desktop -->
+          <div class="order-1 lg:order-1">
             <div class="mb-8 md:mb-12 overflow-hidden text-center lg:text-left">
               <span class="hero-tag inline-block text-[8px] md:text-[10px] font-black uppercase tracking-[0.5em] text-accent">Single Source Deployment</span>
             </div>
@@ -85,8 +85,8 @@ app.innerHTML = `
             </div>
           </div>
 
-          <!-- Technical & QR Hub: visible on all views -->
-          <div class="order-1 lg:order-2 flex flex-col items-center justify-center">
+          <!-- Technical & QR Hub: order-2 on mobile, order-2 on desktop -->
+          <div class="order-2 lg:order-2 flex flex-col items-center justify-center">
              <div class="qr-container flex flex-col items-center p-8 md:p-12 bg-white/[0.03] border border-white/5 rounded-[3rem] md:rounded-[4rem] backdrop-blur-3xl relative group">
                 <div class="qr-box p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] shadow-2xl relative mb-8 md:mb-12 overflow-hidden">
                    <canvas id="qrcode-canvas" class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64"></canvas>
