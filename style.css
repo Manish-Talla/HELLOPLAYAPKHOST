@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  /* Phenomenon-inspired sophisticated palette */
+  --color-primary-bg: #0E1012;
+  --color-accent: #0057FF; /* Professional Blue */
+  --color-secondary: #00F0FF;
+  --color-surface: rgba(255, 255, 255, 0.02);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --tracking-tighter: -0.05em;
+  --tracking-tightest: -0.1em;
+  
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-3xl: 48px;
+}
+
+@layer base {
+  html {
+    @apply antialiased bg-primary-bg text-white selection:bg-accent selection:text-white;
+    font-family: var(--font-body);
+    scroll-behavior: auto; /* Managed by Lenis */
+  }
+
+  body {
+    @apply m-0 p-0 overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-black leading-none uppercase tracking-tightest font-display;
+  }
+
+  p {
+    @apply leading-relaxed text-white/60;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface backdrop-blur-3xl border border-border-subtle;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-accent;
+  }
+
+  .accent-gradient {
+    @apply bg-gradient-to-r from-accent to-[#0037FF];
+  }
+
+  .noise-overlay {
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+    @apply fixed inset-0 pointer-events-none opacity-[0.03] z-[9999];
+  }
+
+  .magnetic {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .glow-mesh {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 87, 255, 0.05) 0%, transparent 70%);
+  }
+
+  .section-padding {
+    @apply py-40 md:py-60;
+  }
+
+  .metric-divider {
+    @apply border-border-subtle h-[1px] w-full;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Lenis CSS */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
