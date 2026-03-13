@@ -60,10 +60,9 @@ app.innerHTML = `
               <span class="hero-tag inline-block text-[8px] md:text-[10px] font-black uppercase tracking-[0.5em] text-accent">Single Source Deployment</span>
             </div>
 
-            <h1 class="hero-title text-[14vw] lg:text-[8vw] leading-[0.85] font-black tracking-tightest mb-12 md:mb-16 text-center lg:text-left">
-              <div class="overflow-hidden"><span class="reveal-line inline-block">SECURE</span></div>
-              <div class="overflow-hidden"><span class="reveal-line inline-block italic text-white/10 uppercase">APK</span></div>
-              <div class="overflow-hidden"><span class="reveal-line inline-block text-gradient">SYNC.</span></div>
+            <h1 class="hero-title text-[14vw] lg:text-[10vw] leading-[0.8] font-black tracking-tightest mb-12 md:mb-16 text-center lg:text-left transition-all">
+              <div class="overflow-hidden"><span class="reveal-line inline-block text-accent">HELLO</span></div>
+              <div class="overflow-hidden"><span class="reveal-line inline-block text-white uppercase italic">PLAY</span></div>
             </h1>
 
             <div class="flex flex-col gap-10 md:gap-12 items-center lg:items-start text-center lg:text-left">
