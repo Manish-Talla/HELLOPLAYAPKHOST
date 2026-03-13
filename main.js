@@ -74,7 +74,7 @@ app.innerHTML = `
               
               <div class="flex flex-col md:flex-row items-center gap-8 w-full md:w-auto">
                 <button class="hero-cta bg-accent text-white px-10 md:px-16 py-6 md:py-8 rounded-full font-black uppercase tracking-widest text-sm md:text-lg shadow-2xl hover:scale-105 active:scale-95 transition-all w-full md:w-auto magnetic">
-                  Initialize Download
+                  DOWNLOAD
                 </button>
                 <div class="flex flex-col opacity-30 text-center md:text-left">
                    <span class="text-[8px] md:text-[9px] font-black uppercase tracking-widest">Protocol: Direct Sync</span>
